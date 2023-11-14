@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="register.css">
+    <title>註冊</title>
+  </head>
+  <body>
+    <div class="rg_layout">
+      <div class="rg_left">
+        <p>新用戶註冊</p>
+        <p>USER REGISTER</p>
+      </div>
+
+      <div class="rg_center">
+        <form action="register.php" method="post" >
+          <table >
+              <td class="td_left">用戶名</td>
+              <td class="td_right"><input type="text" id="username" name="name" placeholder="請輸入用戶名"></td>
+            </tr>
+            <tr> 
+              <td class="td_left">帳號</td>
+              <td class="td_right"><input type="text" id="account" name="account"  placeholder="請輸入帳號"></td>
+              </td>
+            </tr>
+            <tr> 
+                <td class="td_left">密碼</td>
+                <td class="td_right"><input type="password" id="password" name="password"  placeholder="請輸入密碼"></td>
+                </td>
+              </tr>
+              <!---->
+              <tr> 
+                <td class="td_left">請勾選您的身分
+                <td class="td_right"><input type="radio" value="2" name="authority">廠商
+                <input type="radio" value="1" name="authority" checked>遊客</td> 
+              </tr>
+          </table>
+          <br>
+          <div align="center" >
+            <input type="submit" id="btn" value="確定">  
+            <input type="reset" id="btn" value="重新輸入">
+          </div>
+        </form>
+      </div>
+
+    </div>
+    
+    <p align="center"><a href="login.php">回登入</a></p>	
+  </body>
+</html>
